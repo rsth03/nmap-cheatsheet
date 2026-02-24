@@ -1,3 +1,8 @@
+XML to HTML (saved with -oX)
+```
+xsltproc scan.xml -o scan.html
+```
+
 TCP SYN/ACK pings
 ```
 sudo nmap -PS22,80,443 -PA80,443 <IP> -sn -n

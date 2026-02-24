@@ -15,10 +15,10 @@ sudo nmap -vv -T2 --top-ports=20 -sS <IP> -Pn -n --disable-arp-ping
 
 UDP probe
 ```
-sudo nmap -vv -sU -p <PORT> <IP> -Pn -n
+nmap -vv -sU -p <PORT> <IP> -Pn -n
 ```
 
 Basic DNS enum
 ```
-dig @<IP> CH TXT version.bind +time=2 +tries=1
+nmap -script=dns-nsid <IP>
 ```
